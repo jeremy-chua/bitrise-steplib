@@ -8,10 +8,10 @@ description: |
 website: https://github.com/jeremy-chua/bitrise-step-fortify-on-demand-mobile-assessment
 source_code_url: https://github.com/jeremy-chua/bitrise-step-fortify-on-demand-mobile-assessment
 support_url: https://github.com/jeremy-chua/bitrise-step-fortify-on-demand-mobile-assessment/issues
-published_at: 2021-10-20T08:27:18.204432733+08:00
+published_at: 2021-10-21T06:47:05.509706187+08:00
 source:
   git: https://github.com/jeremy-chua/bitrise-step-fortify-on-demand-mobile-assessment.git
-  commit: 91a5fb66253c1a3130ba6a4a7f981de85107480c
+  commit: b8279e4ddc19300a0735efd26a32e5d803615dff
 host_os_tags:
 - osx-10.10
 - ubuntu-16.04
@@ -46,7 +46,7 @@ inputs:
     is_sensitive: true
     summary: Client secret for authentication
     title: Client Secret
-- datacenter: ' '
+- datacenter: AMS
   opts:
     description: Select the datacenter assigned to you. This is provided once your
       are onboarded with Fortify on Demand.
@@ -75,7 +75,7 @@ inputs:
     summary: Release ID for this mobile assessment
     title: Release ID
   release_id: null
-- assessment_type: ' '
+- assessment_type: Mobile Assessment (Single Scan)
   opts:
     description: "Mobile Assessment includes Vulnerability analysis of mobile binary,
       Endpoint reputation analysis and Security expert review of prioritized results.
@@ -91,7 +91,7 @@ inputs:
     - Mobile+ Assessment (Single Scan)
     - Mobile Assessment (Subscription)
     - Mobile+ Assessment (Subscription)
-- framework_type: ' '
+- framework_type: Android
   opts:
     is required: true
     is_expand: true
@@ -109,7 +109,7 @@ inputs:
     - Phone
     - Tablet
     - Both
-  platform_type: ' '
+  platform_type: Phone
 - file_path: null
   opts:
     is required: true
